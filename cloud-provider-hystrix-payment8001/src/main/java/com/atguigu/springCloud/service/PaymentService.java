@@ -19,4 +19,11 @@ public interface PaymentService {
      * @return
      */
     public String paymentService_timeout(String id);
+
+    /**
+     * 服务降级兜底的方法
+     * @param id
+     * @return
+     */
+    public String paymentInfo_TimeOutHandler(String id);
 }
